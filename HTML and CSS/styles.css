@@ -15,7 +15,7 @@
 @keyframes transitionFromLeft {
     from{
         opacity: 0;
-        transform:translate(-42px, -18px)
+        transform:translate(-50px, 0px)
     }
     to {
         opacity: 1;
@@ -87,6 +87,7 @@ dt{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     font-weight: lighter;
+    animation: transitionIn 2s;
     
 }
 dd{
@@ -182,7 +183,15 @@ dd{
     animation: transitionToTop 2s;
     
 }
-
+.companyLogos{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    animation: transitionToBottom 2s;
+}
 
 
 
