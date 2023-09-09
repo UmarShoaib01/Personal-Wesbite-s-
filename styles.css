@@ -84,7 +84,9 @@ h1{
     margin-top: 0px;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: solid;
+    border-color: white;
 }
 dt{
     color: aliceblue;
@@ -99,6 +101,7 @@ dt{
     font-size: 25px;
     font-weight: lighter;
     animation: transitionIn 2s;
+    
     
 }
 dd{
@@ -127,6 +130,9 @@ dd{
     border-radius: 50%;
     box-shadow: 40px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionIn 1.5s;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: white;
     
   }
 #porfolioSections{
@@ -136,30 +142,46 @@ dd{
     color: aliceblue;
     background-image: linear-gradient(#176B87, #053B50,#040D12);
     border-radius: 25px;
+    border-style: solid;
     width:500px;
     margin-left: 700px;
     margin-right: 700px;
+    margin-bottom: 18px;
     padding-top: 15px;
     padding-bottom:15px;
     font-weight: lighter;
+    font-size:20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionFromRight 2s;
+    cursor: pointer;
 
 }
+
+.pageLink:hover, .pageLink2:hover{
+    background-image: linear-gradient(#176B87,#053B50);
+    color: black;
+    border-style: double;
+    border-color: white;
+}
+
 .pageLink2{
     color: aliceblue;
     background-image: linear-gradient(#176B87, #053B50,#040D12);
     border-radius: 25px;
+    border-style: solid;
     width: 500px;
     margin-left: 700px;
     margin-right: 700px;
+    margin-bottom: 18px;
     padding-top: 15px;
     padding-bottom:15px;
     font-weight: lighter;
+    font-size:20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionFromLeft 2s;
+    cursor: pointer
 
 }
 /*About Me Page CSS*/
@@ -173,10 +195,9 @@ dd{
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    font-weight: lighter;
     animation: transitionIn 2s;
 
 }
@@ -187,11 +208,13 @@ dd{
     width: 200px;
     float: left;
     margin-bottom: 135px;
-    margin-top: 100px;
-    margin-left: 32px;
+    margin-top: 75px;
+    margin-left: 25px;
     border-radius: 50%;
     box-shadow: 40px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionToTop 2s;
+    border-style:solid;
+    border-color: #040D12;
     
 }
 .companyLogos{
