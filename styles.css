@@ -59,6 +59,7 @@
 
 }
 
+
 /* General Changes to Overall Layout Across ALL PAGES*/
 
 html{
@@ -127,6 +128,7 @@ dd{
 
 /*Landing Page CSS*/
 .avatar {
+    
     border-radius: 50%;
     box-shadow: 40px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionIn 1.5s;
@@ -135,6 +137,8 @@ dd{
     border-color: white;
     
   }
+
+
 #porfolioSections{
     text-align: center;
 }
@@ -227,6 +231,30 @@ dd{
     animation: transitionToBottom 2s;
 }
 
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-image: linear-gradient(#176B87,#053B50);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #565a5ce8;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1a1919;
+  }
 
 
 
