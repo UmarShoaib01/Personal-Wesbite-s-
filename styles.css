@@ -15,7 +15,18 @@
 @keyframes transitionFromLeft {
     from{
         opacity: 0;
-        transform:translate(-50px, 0px)
+        transform:translate(-25px, 0px)
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+@keyframes transitionFromRight {
+    from{
+        opacity: 0;
+        transform:translate(25px, 0px)
     }
     to {
         opacity: 1;
@@ -115,7 +126,7 @@ dd{
 .avatar {
     border-radius: 50%;
     box-shadow: 40px 0px 40px rgba(0, 0, 0, 0.4);
-    animation: transitionFromLeft 1.5s;
+    animation: transitionIn 1.5s;
     
   }
 #porfolioSections{
@@ -133,7 +144,7 @@ dd{
     font-weight: lighter;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
-    animation: transitionIn 2s;
+    animation: transitionFromRight 2s;
 
 }
 .pageLink2{
@@ -148,7 +159,7 @@ dd{
     font-weight: lighter;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
-    animation: transitionIn 2s;
+    animation: transitionFromLeft 2s;
 
 }
 /*About Me Page CSS*/
