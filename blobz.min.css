@@ -1,7 +1,19 @@
 .tk-blob {
+  animation: blob-turn var(--time, 50s) linear infinite;
+  fill: var(--fill, #6aced1);
+  position: absolute;
+  left: -250px;
+  top: -250px;
+  width: 700px;
+  transform-origin: center;
+}
+.tk-blob-two {
   animation: blob-turn var(--time, 30s) linear infinite;
-  fill: var(--fill, #7600f8);
-  position: relative;
+  fill: var(--fill, #cf0cc6);
+  position: absolute;
+  right: -250px;
+  bottom: -250px;
+  width: 700px;
   transform-origin: center;
 }
 .tk-blob svg {

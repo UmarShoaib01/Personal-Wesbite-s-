@@ -1,4 +1,4 @@
-@import "blobz.css";
+@import "blobz.min.css";
 
 /*Transition for Landing Page Avatar and Page Links*/
 @keyframes transitionIn {
@@ -79,8 +79,12 @@
 /* General Changes to Overall Layout Across ALL PAGES*/
 
 html{
-    /*background-color: #182e3d;*/
     
+}
+.indexBody{
+
+overflow: hidden;
+
 }
 
 .boldedWords{
@@ -233,12 +237,12 @@ dd{
     margin-top: 75px;
     margin-left: 25px;
     border-radius: 50%;
-    box-shadow: 40px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionToTop 2s;
     border-style:solid;
     border-color: #040D12;
     color: var(--color);
-    -webkit-box-reflect: below 4px
+    -webkit-box-reflect: below 30px -webkit-gradient(linear,
+    right top, right bottom, from(transparent), to(rgba(255,255,255,0.4)));
 
 }
 .companyLogos{
