@@ -1,3 +1,4 @@
+@import "blobz.css";
 
 /*Transition for Landing Page Avatar and Page Links*/
 @keyframes transitionIn {
@@ -59,11 +60,26 @@
 
 }
 
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30%
+        70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60%
+        30% 70%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30%
+        70% 40%;
+    }
+}
+
 
 /* General Changes to Overall Layout Across ALL PAGES*/
 
 html{
-    background-color: #182e3d;
+    /*background-color: #182e3d;*/
     
 }
 
@@ -82,7 +98,8 @@ h1{
     background-color: #040D12;
     height: 50px;
     border-radius: 25px;
-    margin-top: 0px;
+    margin-top:0px;
+    margin-bottom: 15px;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -90,7 +107,7 @@ h1{
     border-color: white;
 }
 dt{
-    color: aliceblue;
+    color:#040D12;
     font-size: 25px;
     margin-left: 10px;
     margin-right: 10px ;
@@ -106,7 +123,7 @@ dt{
     
 }
 dd{
-    color: #EEEEEE;
+    color: #040D12;
     text-align:justify;
     width: fit-content;
     padding-left: 25px;
@@ -129,12 +146,14 @@ dd{
 /*Landing Page CSS*/
 .avatar {
     
-    border-radius: 50%;
-    box-shadow: 40px 0px 40px rgba(0, 0, 0, 0.4);
-    animation: transitionIn 1.5s;
-    margin-bottom: 10px;
+    
+    animation: animate 5s ease-in-out infinite;
     border-style: solid;
-    border-color: white;
+    border-width:3px;
+    border-color:#040D12;
+    transition: all 1s ease-in-out;
+    background-size: 50%;
+    width: 21rem;
     
   }
 
@@ -144,7 +163,7 @@ dd{
 }
 .pageLink{
     color: aliceblue;
-    background-image: linear-gradient(#176B87, #053B50,#040D12);
+    background-color: #040D12;
     border-radius: 25px;
     border-style: solid;
     width:500px;
@@ -155,23 +174,22 @@ dd{
     padding-bottom:15px;
     font-weight: lighter;
     font-size:20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
     animation: transitionFromRight 2s;
     cursor: pointer;
 
 }
 
 .pageLink:hover, .pageLink2:hover{
-    background-image: linear-gradient(#176B87,#053B50);
+    background-color:#EEEEEE;
     color: black;
     border-style: double;
-    border-color: white;
+    border-color:#040D12;
+    text-decoration: underline;
 }
 
 .pageLink2{
     color: aliceblue;
-    background-image: linear-gradient(#176B87, #053B50,#040D12);
+    background-color: #040D12;
     border-radius: 25px;
     border-style: solid;
     width: 500px;
@@ -182,8 +200,7 @@ dd{
     padding-bottom:15px;
     font-weight: lighter;
     font-size:20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
+    
     animation: transitionFromLeft 2s;
     cursor: pointer
 
@@ -191,15 +208,16 @@ dd{
 /*About Me Page CSS*/
 
 .aboutMeP{
-    background-color: #EFE1D1;
+    background-color: #040D12;
     border-radius: 25px;
-    color: black;
+    color:#EEEEEE;
     text-align: center;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     animation: transitionIn 2s;
@@ -219,7 +237,9 @@ dd{
     animation: transitionToTop 2s;
     border-style:solid;
     border-color: #040D12;
-    
+    color: var(--color);
+    -webkit-box-reflect: below 4px
+
 }
 .companyLogos{
     height: 50px;
@@ -231,11 +251,12 @@ dd{
     animation: transitionToBottom 2s;
 }
 
+
 /* ScrollBar */
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
     border-radius: 10px;
   }
   
@@ -248,7 +269,7 @@ dd{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #565a5ce8;
+    background-color: #9ea3aa;
   }
   
   /* Handle on hover */
