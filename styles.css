@@ -162,8 +162,14 @@ dd{
     transition: all 1s ease-in-out;
     background-size: 50%;
     width: 21rem;
+    transition: transform 0.5s;
     
   }
+
+.avatar:hover{
+    transform: scale(1.05);
+    
+}
 
 
 #porfolioSections{
@@ -182,6 +188,7 @@ dd{
     padding-bottom:15px;
     font-weight: lighter;
     font-size:20px;
+    transition: transform 0.5s;
     animation: transitionFromRight 2s;
     cursor: pointer;
 
@@ -193,6 +200,7 @@ dd{
     border-style: double;
     border-color:#040D12;
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .pageLink2{
@@ -208,7 +216,7 @@ dd{
     padding-bottom:15px;
     font-weight: lighter;
     font-size:20px;
-    
+    transition: transform 0.5s;
     animation: transitionFromLeft 2s;
     cursor: pointer
 
