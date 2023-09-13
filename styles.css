@@ -288,13 +288,13 @@ dd{
   /* Track */
   ::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-image: linear-gradient(#176B87,#053B50);
+    background-image: rgb(255, 255, 255);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: #9ea3aa;
+    background-color: #000000;
   }
   
   /* Handle on hover */
