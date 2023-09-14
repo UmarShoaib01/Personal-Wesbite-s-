@@ -83,7 +83,6 @@ html{
 }
 .indexBody{
 
-overflow: hidden;
 
 }
 
@@ -155,7 +154,7 @@ dd{
 .avatar {
     
     
-    animation: animate 5s ease-in-out infinite;
+    animation: animate 5s ease-in-out infinite ;
     border-style: solid;
     border-width:3px;
     border-color:#040D12;
@@ -168,12 +167,15 @@ dd{
 
 .avatar:hover{
     transform: scale(1.05);
+    box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
+
     
 }
 
-
 #porfolioSections{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .pageLink{
     color: aliceblue;
@@ -181,8 +183,6 @@ dd{
     border-radius: 25px;
     border-style: solid;
     width:500px;
-    margin-left: 700px;
-    margin-right: 700px;
     margin-bottom: 18px;
     padding-top: 15px;
     padding-bottom:15px;
@@ -200,6 +200,7 @@ dd{
     border-style: double;
     border-color:#040D12;
     text-decoration: underline;
+    box-shadow: 10px 0px 40px rgba(0, 0, 0, 0.4);
     transform: scale(1.1);
 }
 
@@ -209,8 +210,6 @@ dd{
     border-radius: 25px;
     border-style: solid;
     width: 500px;
-    margin-left: 700px;
-    margin-right: 700px;
     margin-bottom: 18px;
     padding-top: 15px;
     padding-bottom:15px;
@@ -253,8 +252,8 @@ dd{
     border-style:solid;
     border-color: #040D12;
     color: var(--color);
-    -webkit-box-reflect: below 30px -webkit-gradient(linear,
-    right top, right bottom, from(transparent), to(rgba(255,255,255,0.4)));
+    /*-webkit-box-reflect: below 30px -webkit-gradient(linear,
+    right top, right bottom, from(transparent), to(rgba(255,255,255,0.4)));*/
     transition: transform 0.5s;
 }
 .skillsPic:hover{
