@@ -252,8 +252,6 @@ dd{
     border-style:solid;
     border-color: #040D12;
     color: var(--color);
-    /*-webkit-box-reflect: below 30px -webkit-gradient(linear,
-    right top, right bottom, from(transparent), to(rgba(255,255,255,0.4)));*/
     transition: transform 0.5s;
 }
 .skillsPic:hover{
