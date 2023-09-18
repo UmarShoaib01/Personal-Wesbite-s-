@@ -305,12 +305,65 @@ dd{
   
 }
 
-.container .box:hover{
+#box_one:hover {
     transform: scale(1.1);
+    background-image: url(./Images/covidMap.png);
+    border-style: solid;
+    border-color: #000000;
     
 }
+#box_two:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/amazon.jpg);
+    background-size: contain;
+    border-style: solid;
+    border-color: #000000;
+    
+    
+}
+#box_three:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/spaceinvade.png);
+    border-style: solid;
+    border-color: #000000;
+    background-size:cover;
+    background-position: center;
+    
+}
+#box_four:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/calc.png);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    
+}
+#box_five:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/tic.png);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    background-position: center;
+    
+}
+#box_six:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/quiz.jpg);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    background-position: center;
+    
+}
+.container .box:hover .projectText{
+    color: #000000;
+  
+}
 
-.container .box .projectText{
+
+
+.box .projectText{
     
     color: aliceblue;
     margin-top: 100px;
@@ -329,11 +382,15 @@ dd{
     justify-content: center;
     transition: transform 0.5s;
     animation: transitionToBottom 1s;
+    border-radius: 25px;
 }
 .box img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
 }
+
+
+
 
 
 
