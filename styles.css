@@ -275,6 +275,7 @@ dd{
     transform: scale(1.1);
 }
 /*Personal Project Page CSS*/
+
 .personalProjectsBody{
     margin: 0;
     padding: 0;
@@ -282,20 +283,19 @@ dd{
     
 }
 .container{
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 1200px;
     height: 600px;
     margin: 110px auto;
 
-    
-    
 } 
 
 .container .box{
     width: calc(400px - 30px);
     height: calc(300px - 30px);
     background:#000000;
-    float: left;
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
@@ -388,6 +388,124 @@ dd{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+/*Experience Page CSS*/
+
+.experienceBody{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+.projcontainer{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    justify-content:center;
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+
+
+
+.projcontainer .projbox{
+    
+    width: calc(400px - 30px);
+    height: calc(300px - 60px);
+    background:#000000;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: transform 0.5s;
+    animation: transitionIn 1.0s;
+  
+}
+
+.projcontainer .projbox:last-child{
+    flex-grow: 1;
+    
+}
+
+.line-break{
+    width: 100%;
+}
+
+.projbox .experienceText{
+    text-align: center;
+    color: #EEEEEE;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+#proj_box_one:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/TD.png);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+#proj_box_one:hover .experienceText, #proj_box_two:hover .experienceText, #proj_box_five:hover .experienceText {
+    color: #000000;
+}
+#proj_box_two:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/TD.png);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+    
+}
+#proj_box_three:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/pepsiCo.jpg);
+    border-style: solid;
+    border-color: #000000;
+    background-size:cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+#proj_box_four:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/creospark.png);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+#proj_box_five:hover {
+    transform: scale(1.1);
+    background-image: url(./Images/projectBunker.jpg);
+    border-style: solid;
+    border-color: #000000;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
 
 
 
