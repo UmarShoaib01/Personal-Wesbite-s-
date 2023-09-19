@@ -436,7 +436,7 @@ dd{
     border-radius: 25px;
     border-color: #000000;
     border-style: solid;
-    border-width: 15px;
+    border-width: 10px;
     transition: transform 0.5s;
     animation: transitionIn 1.0s;
     flex-grow: 1;
@@ -492,8 +492,8 @@ dd{
 
 #proj_box_five{
     background-image: url(./Images/projectBunker.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position:center
 }
 
 
