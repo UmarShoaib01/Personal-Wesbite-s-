@@ -427,22 +427,33 @@ dd{
   
 }
 
-.projcontainer .projbox:last-child{
+.projcontainer .descBox{
+    width: calc(400px - 30px);
+    height: calc(300px - 60px);
+    background:#000000;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: transform 0.5s;
+    animation: transitionIn 1.0s;
     flex-grow: 1;
-    
 }
+
 
 .line-break{
     width: 100%;
 }
 
-.projbox .experienceText{
+.experienceText, #descriptionText{
     text-align: center;
     color: #EEEEEE;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: larger;
 
 }
+
 
 
 #proj_box_one:hover {
@@ -455,6 +466,7 @@ dd{
     cursor: pointer;
     
 }
+
 #proj_box_one:hover .experienceText, #proj_box_two:hover .experienceText, #proj_box_five:hover .experienceText {
     color: #000000;
 }
