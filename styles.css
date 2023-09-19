@@ -412,7 +412,6 @@ dd{
 }
 
 
-
 .projcontainer .projbox{
     
     width: calc(400px - 30px);
@@ -430,11 +429,14 @@ dd{
 .projcontainer .descBox{
     width: calc(400px - 30px);
     height: calc(300px - 60px);
-    background:#000000;
+    background:rgba(255,255,255);
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 25px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 15px;
     transition: transform 0.5s;
     animation: transitionIn 1.0s;
     flex-grow: 1;
@@ -447,69 +449,98 @@ dd{
 
 .experienceText, #descriptionText{
     text-align: center;
-    color: #EEEEEE;
     padding-left: 10px;
     padding-right: 10px;
     font-size: larger;
+}
+#proj_box_three .experienceText, #proj_box_four .experienceText{
+  
+    color:rgba(255,255,255)
+    
 
 }
 
+#descriptionText{
+    color: #000000;
+}
+
+#proj_box_one{
+    background-image: url(./Images/TD.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#proj_box_two{
+    background-image: url(./Images/TD.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#proj_box_three{
+    background-image: url(./Images/pepsiCo.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#proj_box_four{
+    background-image: url(./Images/creospark.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#proj_box_five{
+    background-image: url(./Images/projectBunker.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 
 #proj_box_one:hover {
     transform: scale(1.1);
-    background-image: url(./Images/TD.png);
     border-style: solid;
     border-color: #000000;
-    background-size: cover;
-    background-position: center;
     cursor: pointer;
-    
+    opacity: 0.7;
 }
 
-#proj_box_one:hover .experienceText, #proj_box_two:hover .experienceText, #proj_box_five:hover .experienceText {
-    color: #000000;
-}
+
 #proj_box_two:hover {
     transform: scale(1.1);
-    background-image: url(./Images/TD.png);
     border-style: solid;
     border-color: #000000;
-    background-size: cover;
-    background-position: center;
     cursor: pointer;
+    opacity: 0.7;
     
     
 }
 #proj_box_three:hover {
     transform: scale(1.1);
-    background-image: url(./Images/pepsiCo.jpg);
     border-style: solid;
     border-color: #000000;
-    background-size:cover;
-    background-position: center;
     cursor: pointer;
+    opacity: 0.7;
     
 }
 #proj_box_four:hover {
     transform: scale(1.1);
-    background-image: url(./Images/creospark.png);
     border-style: solid;
     border-color: #000000;
-    background-size: cover;
-    background-position: center;
     cursor: pointer;
+    opacity: 0.7;
     
 }
 #proj_box_five:hover {
     transform: scale(1.1);
-    background-image: url(./Images/projectBunker.jpg);
     border-style: solid;
     border-color: #000000;
-    background-size: cover;
-    background-position: center;
     cursor: pointer;
-    
+    opacity: 0.7;
+}
+
+#proj_box_one:hover .experienceText, #proj_box_two:hover .experienceText, #proj_box_five:hover .experienceText {
+    color: #000000;
 }
 
 
