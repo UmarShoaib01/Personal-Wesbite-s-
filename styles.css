@@ -159,7 +159,7 @@ dd{
 
 header {
     background-color: #272829; /* Dark background like your buttons */
-    padding: 1rem 0; /* Some padding around the header */
+    padding: 1.2rem 0; /* Some padding around the header */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     position: sticky; /* Make the header stick to the top of the viewport */
     top: 0; /* Align the sticky header at the top */
@@ -178,7 +178,7 @@ header {
 nav ul {
     list-style: none; /* Remove default list styling */
     padding: 0;
-    margin: 0;
+    margin: 0 50px;
     display: flex; /* Display the list items inline */
     justify-content: center; /* Center the list items */
     align-items: center;
