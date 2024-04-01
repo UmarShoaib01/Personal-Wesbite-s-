@@ -1,4 +1,5 @@
 @import "blobz.min.css";
+@import url();
 
 /*Transition for Landing Page Avatar and Page Links*/
 @keyframes transitionIn {
@@ -75,18 +76,33 @@
     }
 }
 
+@font-face {
+    font-family: SwitzerBold;
+    src: url(Switzer-Bold.otf);
+  }
+
+@font-face {
+    font-family: SwitzerLight;
+    src: url(Switzer-Light.otf);
+}
+
+@font-face {
+    font-family: SwitzerRegular;
+    src: url(sansation_light.woff);
+}
+
 
 
 /* General Changes to Overall Layout Across ALL PAGES*/
 
 html{
+
+    scroll-behavior: smooth;
     
 }
 .indexBody, .personalProjectsBody, .experienceBody, .aboutBody{
     margin: 0;
     padding: 0;
-    background-color: #E8E8E8;
-
 }
 
 .boldedWords{
@@ -112,102 +128,66 @@ h1{
     border-style: solid;
     
 }
-dt{
-    color:#040D12;
-    font-size: 25px;
-    margin-left: 10px;
-    margin-right: 10px ;
-    margin-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-weight: bold; 
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    font-weight: lighter;
-    animation: transitionIn 2s;
-    
-    
-}
-dd{
-    color: #040D12;
-    text-align:justify;
-    width: fit-content;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-bottom: 4px;
-    font-size: 20px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: lighter;
-}
-.backToFront{
-    font-size: 25px;
-    color:#EEEEEE;
-    font-weight: bold;
-    position: absolute;
-    left: 20px;
-    top: 55px;
-    transition: transform 0.5s;
 
+
+h2{
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: 'Switzer';
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 50px;
 }
-.backToFront:hover{
-    transform: scale(1.1);
-    
-}
+
 
 /*Landing Page CSS*/
 
 
 header {
-    background-color: #272829; /* Dark background like your buttons */
-    padding: 1.2rem 0; /* Some padding around the header */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    position: sticky; /* Make the header stick to the top of the viewport */
-    top: 0; /* Align the sticky header at the top */
-    z-index: 1000; /* Ensure the header stays on top of other content */
+    
+     /* Dark background like your buttons */
+    padding: 2rem ; /* Some padding around the header */
+     /* Slight shadow for depth */
+     background-color: #231f20;
 }
-
-#headerName{
-
-    font-size: 20px;
-    color: #D8D9DA; /* Light grey color for text */
-    font-weight: lighter;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 
 nav ul {
     list-style: none; /* Remove default list styling */
-    padding: 0;
     margin: 0 50px;
     display: flex; /* Display the list items inline */
     justify-content: center; /* Center the list items */
     align-items: center;
+   
 }
 
 nav ul li {
     margin: 0 20px; /* Spacing between list items */
+    font-family: 'Switzer', sans-serif;
+    
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #D8D9DA; /* Light grey color for text */
-    font-weight: lighter;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    text-decoration: none;
+    color: white; /* Light grey color for text */
+    font-size: 35px;
     transition: color 0.5s ease-in-out;
+    font-weight: 900;
 }
 
 
 
 nav ul li a:hover {
-    color: #EEEEEE; /* Lighter color on hover */
-    text-decoration: underline; /* Underline on hover for emphasis */
+     /* Lighter color on hover */
+    text-decoration:none;/* Underline on hover for emphasis */
     transform: scale(1.1); /* Slight increase in size */
+    
 }
-nav ul li img {
-    height: 50px; /* Adjust based on your preference */
-    width: auto; /* Maintain aspect ratio */
+nav ul li img { /* Adjust based on your preference */
+     /* Maintain aspect ratio */
     transition: transform 0.1s ease-in-out;
+    text-decoration: none;
 }
 
 nav ul li img:hover {
@@ -220,8 +200,7 @@ nav ul li:nth-child(3) {
 
 #icons{
    
-height: 25px;
-   
+height: 35px;
 }
 
 
@@ -237,67 +216,64 @@ height: 25px;
     width: 21rem;
     transition: transform 0.5s;
     
-    
   }
 
 
-#porfolioSections{
+
+#porfolioSections {
     display: flex;
-    align-items:center;
-    justify-content:flex-start;
-    flex-direction: column;
-    padding-top: 50px;
-    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps elements spaced out */
     overflow: hidden;
     text-align: center;
-
-}
-
-
+    margin-top: -5%;
+    height: 100vh;
+    padding: 0px 25%; /* Adds padding on the left and right */
+    background-color: #231f20;
+   
+   
+  }
 
 #heroText{
 
     font-size: 30px; 
-    color: #272727  ; 
-    margin-top: 0px; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    color: white ; 
+    margin-top: 0; 
+    font-family: 'Switzer', sans-serif;
+    font-weight: bold;
+}
 
+.devText{
+
+    font-size: 40px;
+}
+
+.seperator{
+    font-weight: lighter;
 }
 
 
-/*About Me Page CSS*/
 
-#aboutContainer{
-    margin: 50px 0px 0px 0px;
-    height: 450px;
-    
+
+@media (max-width: 768px) {
+    #porfolioSections {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .left-section, .right-section {
+      padding: 0;
+    }
 }
-    
-.aboutMeP {
-    text-align: justify;
-    font-size: 20px;
-    line-height: 1.6;
-    margin: 20px auto;
-    width: 67%;
- 
-    color: #333;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-.aboutSectionWords{
-   
-}
-
-.aboutSectionPicture{
-
-
-}
-
 
 .skillsContainer {
-    width: 550px; /* Adjust based on actual total width of 4 images plus margins */
-    height: 50px;
-    margin: 0 auto; /* Center the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:612px; /* Adjust based on actual total width of 4 images plus margins */
+    height: 55px;
+    padding-right: 25px
+    
 }
 
 .skillsPic{
@@ -308,6 +284,7 @@ height: 25px;
     animation: transitionToTop 2s;
     color: var(--color);
     transition: transform 0.5s;
+    
 }
 
 .skillsPic:hover{
@@ -315,20 +292,119 @@ height: 25px;
     transform: scale(1.1);
 
 }
-.companyLogos{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+
+/*About Me Page CSS*/
+
+#About {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #231f20;
+    padding: 20px;
+    
+  }
+
+.aboutContent{
+    
+    display: flex;
+    flex-direction: row;
+    flex:1 ;
+}
+    
+  .aboutImgContainer{
+    display: flex;
+    
+    
+  }
+
+
+  .aboutPContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    
+    
+  }
+
+  .aboutMeP {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 90%;
+    font-family: 'Switzer', sans-serif;
+    
+  }
+
+  .avatar-two-pic1{
+    align-self: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .avatar-two-pic2{
     position: relative;
-    left: 15px;
-    top: 15px;
-    animation: transitionToBottom 2s;
-    transition: transform 0.5s;
+    bottom: 220px;
+    right: 150px;
+    align-self: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    background-image: url(./Images/ff16.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+  }
+
+
+  .btn-container{
+    display: flex;
+    gap: 1em;
+  }
+  .resume-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size:15px;
+    font-family: 'Switzer', sans-serif;
+    font-weight: bold;
+    background-color: #bfc1c3;
+    color: #333; /* Text color for better contrast */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Enhanced transitions */
+    text-align: center; 
+    user-select: none;
+    line-height: 40px;
+
 }
-.companyLogos:hover{
+
+.resume-btn:hover {
     transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    background-color: #e0e1dd; /* Slightly darker shade on hover */
+    color: #1a1a1a; /* Darker text color on hover */
 }
+
+
+
 /*Personal Project Page CSS*/
+
+#Projects{
+    background-color: #231f20;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .personalProjectsBody{
     margin:0;
@@ -341,22 +417,19 @@ height: 25px;
     justify-content: center;
     width: 1200px;
     height: 600px;
-    margin: 110px auto;
-    
-
+    margin-bottom: 50px;
 } 
 
 .container .box{
     width: calc(400px - 30px);
     height: calc(300px - 30px);
-    background:#000000;
+    background:#5a5758;
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 25px;
     transition: transform 0.5s;
     animation: transitionIn 1.0s;
-    
   
 }
 
@@ -425,14 +498,15 @@ height: 25px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Switzer';
     
 }
 
+
 .box img{
     margin: 5px auto;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -453,23 +527,33 @@ height: 25px;
     
 }
 
-.projcontainer{
-    display:flex;
-    flex-wrap:wrap;
-    align-content: flex-start;
-    justify-content:center;
-    width: 1200px;
-    height: 800px;
-    margin: 50px auto 0px;
+#Experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 105vh;
+    background-color: #231f20;
     
 }
 
 
 
+.projcontainer{
+    display:flex;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content:center;
+    width: 1200px;
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+
 .projcontainer .projbox{
     
-    width: calc(400px - 30px);
-    height: calc(300px - 60px);
+    width: 350px;
+    height: 200px;
     background:#000000;
     margin: 15px;
     box-sizing: border-box;
@@ -481,9 +565,8 @@ height: 25px;
 }
 
 .projcontainer .descBox{
-    width: calc(400px - 400px);
-    height: calc(300px - 60px);
-    background:rgba(255,255,255);
+    height: 200px;
+    background:#5a5758;
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
@@ -501,22 +584,32 @@ height: 25px;
     width: 100%;
 }
 
+.experienceText h3{
+    margin-top: 7px;
+    
+}
+
+#experienceTextHeader h3{
+    color: white;
+}
+
 .experienceText, #descriptionText{
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Switzer';
     padding-left: 10px;
     padding-right: 10px;
+    
+   
     
 }
 #proj_box_three .experienceText, #proj_box_four .experienceText{
   
     color:rgba(255,255,255)
-    
 
 }
 
 #descriptionText{
-    color: #000000;
+    color: white
 }
 
 #proj_box_one{
@@ -604,6 +697,7 @@ height: 25px;
 #proj_box_one:hover .experienceText, #proj_box_two:hover .experienceText, #proj_box_five:hover .experienceText {
     color: #000000;
 }
+
 
 
 
