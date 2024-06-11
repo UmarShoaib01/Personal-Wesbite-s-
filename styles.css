@@ -899,7 +899,7 @@ height: 35px;
 }
 
 
-@media (max-width: 330px) and (orientation: portrait), (max-height: 390px) and (orientation: landscape) {
+@media (max-width: 330px) and (orientation: portrait) {
     nav ul li a {
         font-size: 13px;
     }
@@ -945,6 +945,113 @@ height: 35px;
     ::-webkit-scrollbar {
         display: none;
     }
+}
+
+@media (max-width: 330px) and (orientation: landscape) {
+
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:500px; /* Adjust based on actual total width of 4 images plus margins */
+        height: 55px;
+        padding-right: 25px
+        
+    }
+    #porfolioSections {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+         /* Keeps elements spaced out */
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+        margin-top: -5%;
+        height: 100vh;
+        padding: 0px 25%; /* Adds padding on the left and right */
+        background-color: #231f20;
+    }
+
+    #heroText{
+
+        font-size: 20px; 
+        color: white ; 
+        margin-top: 0; 
+        font-family: 'Switzer', sans-serif;
+        font-weight: bold;
+    }
+    .devText{
+
+        font-size: 30px;
+    }
+    .avatar{
+        width: 18rem;
+    }
+
+    .skillsPic{
+        height: 35px;
+        width: 35px;
+        float: left;
+        margin-left: 25px;
+        animation: transitionToTop 2s;
+        color: var(--color);
+        transition: transform 0.5s;
+        
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width: 330px) and (orientation: portrait) {
+    nav ul li a {
+        font-size: 13px;
+    }
+    #icons {
+        height: 13px;
+    }
+    
+    .avatar {
+        width: 13rem;
+    }
+
+    .skillsPic {
+        height: 23px;
+        width: 23px;
+        float: left;
+        margin-left: 25px;
+        animation: transitionToTop 2s;
+        color: var(--color);
+        transition: transform 0.5s;
+    }
+
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 165px; /* Adjust based on actual total width of 4 images plus margins */
+        height: 55px;
+        padding-right: 25px;
+    }
+
+    #heroText {
+        font-size: 15px;
+        color: white;
+        margin-top: 0;
+        font-family: 'Switzer', sans-serif;
+        font-weight: bold;
+    }
+    .devText {
+        font-size: 15px;
+    }
+
+    /* Hide the scrollbar */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
 }
 
 
