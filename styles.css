@@ -945,8 +945,8 @@ height: 35px;
         font-size: 15px;
     }
 
-    html{
-        overflow: hidden;
+    ::-webkit-scrollbar{
+        display: none;
     }
     
 
