@@ -899,7 +899,7 @@ height: 35px;
 }
 
 
-@media (max-width: 330px) and (orientation: portrait), (max-height: 330px) and (orientation: landscape) {
+@media (max-width: 330px) and (orientation: portrait), (max-height: 390px) and (orientation: landscape) {
     nav ul li a {
         font-size: 13px;
     }
