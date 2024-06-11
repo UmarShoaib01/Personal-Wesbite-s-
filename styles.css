@@ -894,7 +894,7 @@ height: 35px;
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 330px) {
     nav ul li a {
         font-size: 13px;
     }
