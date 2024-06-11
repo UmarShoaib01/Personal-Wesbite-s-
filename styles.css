@@ -799,6 +799,8 @@ height: 35px;
 
 }
 
+
+
 /* This is used to reduce the size of the skillsContainer*/
 @media (max-width:1365px){
     .skillsContainer {
@@ -889,6 +891,58 @@ height: 35px;
         transition: transform 0.5s;
         
     }
+}
+
+
+@media (max-width: 390px) {
+    nav ul li a {
+        font-size: 13px;
+    }
+    #icons{
+    
+        height:13px;
+    
+    }
+    
+    .avatar{
+        
+        width: 13rem;
+    }
+
+    .skillsPic{
+        height: 23px;
+        width: 23px;
+        float: left;
+        margin-left: 25px;
+        animation: transitionToTop 2s;
+        color: var(--color);
+        transition: transform 0.5s;
+        
+    }
+
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:165px; /* Adjust based on actual total width of 4 images plus margins */
+        height: 55px;
+        padding-right: 25px
+        
+    }
+
+    #heroText{
+        font-size: 15px; 
+        color: white ; 
+        margin-top: 0; 
+        font-family: 'Switzer', sans-serif;
+        font-weight: bold;
+    }
+    .devText{
+
+        font-size: 15px;
+    }
+
+
 }
 
 
