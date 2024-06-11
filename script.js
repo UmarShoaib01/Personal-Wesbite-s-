@@ -28,3 +28,11 @@ experiences.forEach((experience, index) => {
 
 // Set the initial description text
 descriptionText.textContent = "Hover Over An Experience!";
+
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("side-nav").style.width = "250px";
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("side-nav").style.width = "0";
+});

@@ -98,6 +98,7 @@
 html{
 
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
 }
 .indexBody, .personalProjectsBody, .experienceBody, .aboutBody{
@@ -203,6 +204,61 @@ nav ul li:nth-child(3) {
 height: 35px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+/* Side Navigation Styles */
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #231f20;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Switzer', sans-serif;
+}
+
+.side-nav a:hover {
+    color: #f1f1f1;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+
+
 
 .avatar {
     
@@ -221,7 +277,7 @@ height: 35px;
 
 
 #porfolioSections {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: space-between; /* Keeps elements spaced out */
     overflow: hidden;
@@ -250,20 +306,6 @@ height: 35px;
 
 .seperator{
     font-weight: lighter;
-}
-
-
-
-
-@media (max-width: 768px) {
-    #porfolioSections {
-      flex-direction: column;
-      padding: 20px;
-    }
-  
-    .left-section, .right-section {
-      padding: 0;
-    }
 }
 
 .skillsContainer {
@@ -415,14 +457,14 @@ height: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1200px;
+    width: 100%;
     height: 600px;
     margin-bottom: 50px;
 } 
 
 .container .box{
-    width: calc(400px - 30px);
-    height: calc(300px - 30px);
+    width: 370px;
+    height: 450px;
     background:#5a5758;
     margin: 15px;
     box-sizing: border-box;
@@ -449,32 +491,7 @@ height: 35px;
     
     
 }
-#box_three:hover {
-    transform: scale(1.1);
-    background-image: url(./Images/spaceinvade.png);
-    border-style: solid;
-    border-color: #000000;
-    background-size:cover;
-    background-position: center;
-    
-}
-#box_four:hover {
-    transform: scale(1.1);
-    background-image: url(./Images/calc.png);
-    border-style: solid;
-    border-color: #000000;
-    background-size: cover;
-    
-}
-#box_five:hover {
-    transform: scale(1.1);
-    background-image: url(./Images/tic.png);
-    border-style: solid;
-    border-color: #000000;
-    background-size: cover;
-    background-position: center;
-    
-}
+
 #box_six:hover {
     transform: scale(1.1);
     background-image: url(./Images/quiz.jpg);
@@ -698,19 +715,6 @@ height: 35px;
     color: #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ScrollBar */
 
 /* width */
@@ -735,6 +739,157 @@ height: 35px;
     background: rgb(179, 177, 177)
   }
 
+ 
+@media (max-width: 1140px) {
+    nav ul li a {
+        font-size: 25px;
+    }
+    #icons{
+    
+        height:25px;
+    
+    }
+
+}
+
+@media (max-width: 938px) {
+    nav ul li a {
+        font-size: 22px;
+    }
+    #icons{
+    
+        height:22px;
+    
+    }
+
+}
+
+@media (max-width: 877px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+    #icons{
+    
+        height:18px;
+    
+    }
+
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 530px) {
+    nav ul li a {
+        font-size: 13px;
+    }
+    #icons{
+    
+        height:13px;
+    
+    }
+
+}
+
+/* This is used to reduce the size of the skillsContainer*/
+@media (max-width:1365px){
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:500px; /* Adjust based on actual total width of 4 images plus margins */
+        height: 55px;
+        padding-right: 25px
+        
+    }
+
+    #heroText{
+
+        font-size: 20px; 
+        color: white ; 
+        margin-top: 0; 
+        font-family: 'Switzer', sans-serif;
+        font-weight: bold;
+    }
+    .devText{
+
+        font-size: 30px;
+    }
+    .avatar{
+        width: 18rem;
+    }
+
+    .skillsPic{
+        height: 35px;
+        width: 35px;
+        float: left;
+        margin-left: 25px;
+        animation: transitionToTop 2s;
+        color: var(--color);
+        transition: transform 0.5s;
+        
+    }
+}
+
+@media (max-width:1080px){
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:500px; /* Adjust based on actual total width of 4 images plus margins */
+        height: 55px;
+        padding-right: 25px
+        
+    }
+    #porfolioSections {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+         /* Keeps elements spaced out */
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+        margin-top: -5%;
+        height: 100vh;
+        padding: 0px 25%; /* Adds padding on the left and right */
+        background-color: #231f20;
+    }
+
+    #heroText{
+
+        font-size: 20px; 
+        color: white ; 
+        margin-top: 0; 
+        font-family: 'Switzer', sans-serif;
+        font-weight: bold;
+    }
+    .devText{
+
+        font-size: 30px;
+    }
+    .avatar{
+        width: 18rem;
+    }
+
+    .skillsPic{
+        height: 35px;
+        width: 35px;
+        float: left;
+        margin-left: 25px;
+        animation: transitionToTop 2s;
+        color: var(--color);
+        transition: transform 0.5s;
+        
+    }
+}
 
 
 
