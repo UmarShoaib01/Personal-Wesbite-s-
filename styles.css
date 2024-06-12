@@ -227,6 +227,10 @@ height: 35px;
     background-color: white;
 }
 
+
+
+
+
 /* Side Navigation Styles */
 .side-nav {
     height: 100%;
@@ -239,6 +243,7 @@ height: 35px;
     transition: 0.5s;
     padding-top: 60px;
     z-index: 1;
+
 }
 
 .side-nav a {
@@ -252,7 +257,7 @@ height: 35px;
 }
 
 .side-nav a:hover {
-    color: #f1f1f1;
+    color: black
 }
 
 .side-nav .close-btn {
@@ -430,6 +435,21 @@ height: 35px;
     user-select: none;
     line-height: 40px;
 
+}
+.contact-button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    font-size:15px;
+    font-family: 'Switzer', sans-serif;
+    font-weight: bold;
+    background-color: #bfc1c3;
+    color: #333; /* Text color for better contrast */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Enhanced transitions */
+    text-align: center; 
+    user-select: none;
+    line-height: 40px;
 }
 
 .resume-btn:hover {
@@ -744,69 +764,9 @@ height: 35px;
     background: rgb(179, 177, 177)
   }
 
- 
-@media (max-width: 1140px) {
-    nav ul li a {
-        font-size: 25px;
-    }
-    #icons{
-    
-        height:25px;
-    
-    }
-
-}
-
-@media (max-width: 938px) {
-    nav ul li a {
-        font-size: 22px;
-    }
-    #icons{
-    
-        height:22px;
-    
-    }
-
-}
-
-@media (max-width: 877px) {
-    nav ul li a {
-        font-size: 18px;
-    }
-    #icons{
-    
-        height:18px;
-    
-    }
-
-}
-
-@media (max-width: 800px) {
-    nav ul {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
 
 
-@media (max-width: 530px) {
-    nav ul li a {
-        font-size: 13px;
-    }
-    #icons{
-    
-        height:13px;
-    
-    }
-
-}
-
-
-
-/* This is used to reduce the size of the skillsContainer*/
+/* Mobile Version */
 @media (max-width:1365px){
     .skillsContainer {
         display: flex;
@@ -898,165 +858,157 @@ height: 35px;
     }
 }
 
+/*Altering Font Sizes for Header and Icons*/
 
-@media (max-width: 330px) and (orientation: portrait) {
+@media (max-width: 1140px) {
     nav ul li a {
-        font-size: 13px;
+        font-size: 25px;
     }
-    #icons {
-        height: 13px;
+    #icons{
+    
+        height:25px;
+    
     }
+
+}
+
+@media (max-width: 938px) {
+    nav ul li a {
+        font-size: 22px;
+    }
+    #icons{
+    
+        height:22px;
+    
+    }
+
+}
+
+@media (max-width: 877px) {
+    nav ul li a {
+        font-size: 18px;
+    }
+    #icons{
+    
+        height:18px;
+    
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    nav ul  {
+        display: none;
+    }
+    .hamburger{
+    
+        display: flex;
+    
+    }
+
+}
+ 
+
+@media (max-width: 480px) and (orientation: portrait) {
+    
     
     .avatar {
-        width: 13rem;
+        width: 15rem;
     }
 
     .skillsPic {
         height: 23px;
         width: 23px;
-        float: left;
-        margin-left: 25px;
-        animation: transitionToTop 2s;
-        color: var(--color);
-        transition: transform 0.5s;
     }
 
     .skillsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 165px; /* Adjust based on actual total width of 4 images plus margins */
-        height: 55px;
-        padding-right: 25px;
+        width: 93%; /* Adjust based on actual total width of 4 images plus margins */
+        
     }
 
     #heroText {
-        font-size: 15px;
-        color: white;
-        margin-top: 0;
-        font-family: 'Switzer', sans-serif;
-        font-weight: bold;
+        font-size: 1.2rem;
+        padding-left: 17px;
+        padding-right: 17px;
     }
     .devText {
-        font-size: 15px;
+        font-size: 1.5rem;
+        
     }
 
     /* Hide the scrollbar */
-    ::-webkit-scrollbar {
+    ::-webkit-scrollbar,.avatar-two-pic2, .avatar-two-pic1, .descBox {
         display: none;
     }
-}
 
-@media (max-width: 330px) and (orientation: landscape) {
+    .resume-btn{
 
-    .skillsContainer {
-        display: flex;
+        width: 120px;
+        line-height: 20px;
+
+    }
+    .contact-button{
+        width: 120px;
+    }
+
+    .container .box{
+        width: 330px;
+        height: 175px;
+
+    }
+
+    .container .box .projectText{
+        font-size: 13px;
+        margin-top: 0;
         align-items: center;
         justify-content: center;
-        width:500px; /* Adjust based on actual total width of 4 images plus margins */
-        height: 55px;
-        padding-right: 25px
-        
     }
-    #porfolioSections {
+
+
+    .projcontainer{
+        
+       
+      
+        width: 100%;
         display:flex;
-        align-items: center;
-        justify-content: center;
-         /* Keeps elements spaced out */
-        flex-direction: column;
-        overflow: hidden;
-        text-align: center;
-        margin-top: -5%;
-        height: 100vh;
-        padding: 0px 25%; /* Adds padding on the left and right */
-        background-color: #231f20;
+        flex-wrap:wrap;
+
+    
     }
 
-    #heroText{
-
-        font-size: 20px; 
-        color: white ; 
-        margin-top: 0; 
-        font-family: 'Switzer', sans-serif;
-        font-weight: bold;
-    }
-    .devText{
-
-        font-size: 30px;
-    }
-    .avatar{
-        width: 18rem;
-    }
-
-    .skillsPic{
-        height: 35px;
-        width: 35px;
-        float: left;
-        margin-left: 25px;
-        animation: transitionToTop 2s;
-        color: var(--color);
-        transition: transform 0.5s;
+    .projcontainer .projbox{
+        
+    
+        width: 400px;
+        height: 100px;
         
     }
 
-    html{
-        overflow-x: hidden;
-    }
-}
-
-
-@media (max-width: 330px) and (orientation: portrait) {
-    nav ul li a {
-        font-size: 13px;
-    }
-    #icons {
-        height: 13px;
+    #proj_box_one{
+        background-image: url(./Images/TD.png);
+        background-size:contain;
+       
+        
     }
     
-    .avatar {
-        width: 13rem;
+    #proj_box_two{
+        background-image: url(./Images/TD.png);
+        background-size:contain;
+        
     }
 
-    .skillsPic {
-        height: 23px;
-        width: 23px;
-        float: left;
-        margin-left: 25px;
-        animation: transitionToTop 2s;
-        color: var(--color);
-        transition: transform 0.5s;
+    .aboutContent{
+
+        margin-top: -50px;
+        
+        
     }
 
-    .skillsContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 165px; /* Adjust based on actual total width of 4 images plus margins */
-        height: 55px;
-        padding-right: 25px;
-    }
-
-    #heroText {
-        font-size: 15px;
-        color: white;
-        margin-top: 0;
-        font-family: 'Switzer', sans-serif;
-        font-weight: bold;
-    }
-    .devText {
-        font-size: 15px;
-    }
-
-    /* Hide the scrollbar */
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
+    
 }
-
-
-
-
 
 
 
