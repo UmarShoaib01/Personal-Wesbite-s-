@@ -954,9 +954,14 @@ height: 35px;
         width: 120px;
     }
 
+    .container{
+        
+        margin-bottom: 50px;
+    }
+
     .container .box{
         width: 330px;
-        height: 175px;
+        height: 150px;
 
     }
 
@@ -971,7 +976,7 @@ height: 35px;
     .projcontainer{
         
        
-      
+       
         width: 100%;
         display:flex;
         flex-wrap:wrap;
@@ -982,7 +987,7 @@ height: 35px;
     .projcontainer .projbox{
         
     
-        width: 400px;
+        width: 330px;
         height: 100px;
         
     }
@@ -1000,13 +1005,25 @@ height: 35px;
         
     }
 
-    .aboutContent{
 
-        margin-top: -50px;
+    .aboutPContainer{
+        padding-bottom: 0px
         
         
     }
 
+    h2{
+        font-size: 30px;
+        width: 100%;
+       
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        
+        
+        
+       
+    }
     
 }
 
